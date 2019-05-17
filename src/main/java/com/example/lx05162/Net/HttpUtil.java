@@ -41,10 +41,10 @@ public class HttpUtil {
         }){
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
-                HashMap<String, String> map = new HashMap<>();
+                Map<String, String> map = new HashMap<>();
                 map.put("phone",t1);
                 map.put("pwd",t2);
-                return super.getParams();
+                return map;
             }
         };
         request.setTag("get");
